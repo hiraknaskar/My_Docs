@@ -11,4 +11,4 @@ function Bg() {
   )
 }
 
-export default Bg
+export default Bg;
