@@ -8,7 +8,7 @@ export default {
     extend: {
       // Colours used in the project 
       colors:{
-        primary:"#2B85FF",
+        primary: 'rgba(219, 142, 0, 0.752)',
         secondary:"#EF863E",
       }
     },

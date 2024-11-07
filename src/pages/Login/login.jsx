@@ -51,20 +51,20 @@ const Login = () => {
     };
 
     return (
-        <div className="flex justify-center items-center h-screen bg-gray-100 ">
-            <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
+        <div className="flex justify-center items-center h-screen bg-zinc-700 text-white"> {/* Updated background color */}
+            <div className="bg-zinc-800 p-8 rounded-lg shadow-lg max-w-md w-full">
                 <form onSubmit={handleLogin}>
                     <h4 className="text-2xl font-semibold text-center mb-6">Login</h4>
 
                     <div className="mb-4">
-                        <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                        <label htmlFor="email" className="block text-sm font-medium text-gray-300"> {/* Updated text color */}
                             Email
                         </label>
                         <input
                             type="text"
                             id="email"
                             placeholder="Email"
-                            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                            className="mt-1 block w-full px-3 py-2 border border-gray-800 rounded-md bg-zinc-700 text-white focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" // Updated input box color
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             required
@@ -87,7 +87,7 @@ const Login = () => {
                 </form>
 
                 <div className="mt-6 text-center">
-                    <p className="text-sm text-gray-600">Not registered yet?</p>
+                    <p className="text-sm text-gray-300">Not registered yet?</p> {/* Updated text color */}
                     <Link to="/register" className="mt-2 text-indigo-600 hover:underline">
                         Create an Account
                     </Link>

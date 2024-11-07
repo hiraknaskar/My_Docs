@@ -44,21 +44,21 @@ const TagInput = ({ tags, setTags }) => {  // Fixed 'tegs' to 'tags'
         </div>
       )}
 
-      <div className="flex items-center gap-4 mt-3">
+      <div className="flex items-center gap-4 mt-3 ">
         <input
           type="text"
           value={inputValue}
-          className="text-sm bg-transparent border px-3 py-2 rounded outline-none"
+          className="text-sm bg-transparent border px-3 py-2 rounded outline-none text-primary border-primary"
           placeholder="Add Tags"
           onChange={handleInputChange}
           onKeyDown={handleKeyDown}
         />
 
         <button
-          className="w-8 h-8 flex items-center justify-center rounded border border-blue-700 hover:bg-blue-700"
+          className="w-8 h-8 flex items-center justify-center rounded border border-primary hover:bg-primary"
           onClick={addNewTag}
         >
-          <MdAdd className="text-2xl text-blue-700 hover:text-white" />
+          <MdAdd className="text-2xl text-primary hover:text-white" />
         </button>
       </div>
     </div>
